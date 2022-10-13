@@ -16,8 +16,5 @@ public class Autor extends Identificable{
 	
 	@OneToMany(mappedBy="autor", cascade = CascadeType.REMOVE)
 	@ListProperties("numero, descripcion, precio")
-	Collection<Producto>productoss;s
-	
-	
-	
+	Collection<Producto>productos;
 }

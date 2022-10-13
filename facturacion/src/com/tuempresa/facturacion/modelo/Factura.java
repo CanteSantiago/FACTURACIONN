@@ -23,4 +23,5 @@ public class Factura extends DocumentoComercial {
 	@OneToMany(mappedBy = "factura")
 	@CollectionView("SinClienteNiFactura")
 	Collection<Pedido>pedidos;
+
 }
