@@ -59,7 +59,7 @@ abstract public class DocumentoComercial extends Identificable{
 	@Digits(integer = 2,fraction = 0)
 	BigDecimal porcentajeIVA;
 	
-	@ReadOnly
+	@ReadOnly 
 	@Stereotype("DINERO")
 	@Calculation("sum(detalles.importe) * porcentajeIVA / 100")
 	BigDecimal iva;
